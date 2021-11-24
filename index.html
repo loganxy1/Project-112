@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Project 110</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Qahiri&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Qahiri&family=Rampart+One&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="heading">
+            <h2 class="heading_text">Hand Gesture Identification Web App</h2>
+            <h4> Show your feeling with the power of hands!</h4>
+        </div>
+        <br>
+        <div id="information">
+            <h3>Take a picture of your hand signal for us to guess what it is</h3>
+            <h4>These are the gestures the model is trained for-</h4>
+            <span>&#9996</span>
+            <span>&#128076</span>
+            <span>&#128077</span>
+            <span>&#128078</span>
+            <span>&#128400</span>
+            <br>
+        </div>
+
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <p>Webcam View-</p>
+            <div id="camera" width="350" height="350"></div>
+            <br><br>
+            <button onclick="takeSnapshot()">Take Picture</button>
+        </div>
+
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <br><br><br>
+            <p id="p1">Prediction-</p>
+            <span id="gesture"></span>
+        </div>
+
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <p>Result-</p>
+            <div id="result" width="350" height="350"></div>
+            <br><br>
+            <button onclick="check()">Predict Gesture</button>
+        </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+body{
+    text-align: center;
+    letter-spacing: 2px;
+    background-color:fuchsia;
+}
+
+.heading{
+    background-color: cyan;
+    font-family: Rampart One;
+    color: firebrick;
+}
+
+#information{
+    color: lime;
+    font-family: gluten;
+}
+
+p{
+    color: lime;
+    font-family: gluten;
+}
+
+#result, #camera{
+    border: 2px;
+    border-color: pink;
+}
+
+#p1{
+    font-size: 20px;
+}
